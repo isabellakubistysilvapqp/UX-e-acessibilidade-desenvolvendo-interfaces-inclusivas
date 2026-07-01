@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança Digital para Idosos</title>
+    <title>Segurança Digital para Idosos | Interface Inclusiva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <div>
+                <p class="eyebrow">UX e Acessibilidade</p>
+                <h1>Segurança Digital para Idosos</h1>
+                <p class="lead">Uma experiência inclusiva com navegação simples, foco claro e textos legíveis.</p>
+            </div>
+            <div class="controls" aria-label="Ajustes de leitura">
+                <button id="increaseText" type="button">Aumentar texto</button>
+                <button id="decreaseText" type="button">Diminuir texto</button>
+                <button id="toggleContrast" type="button" aria-pressed="false">Ativar contraste alto</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h2 id="hero-title">Interfaces inclusivas para mais confiança online</h2>
+                <p>Este projeto mostra boas práticas de UX e acessibilidade para pessoas idosas e qualquer público com necessidades diversas.</p>
+            </div>
+        </section>
+
+        <section class="container cards" aria-labelledby="cards-title">
+            <h2 id="cards-title">Como tornar a navegação mais acessível</h2>
+            <article class="card" aria-labelledby="card-1-title">
+                <h3 id="card-1-title">Texto claro e legível</h3>
+                <p>Use fontes com espaçamento adequado, tamanho de leitura confortável e contraste forte entre texto e fundo.</p>
+            </article>
+            <article class="card" aria-labelledby="card-2-title">
+                <h3 id="card-2-title">Botões fáceis de encontrar</h3>
+                <p>Controles grandes, com foco visível e rótulos diretos ajudam a reduzir a frustração.</p>
+            </article>
+            <article class="card" aria-labelledby="card-3-title">
+                <h3 id="card-3-title">Estrutura semântica</h3>
+                <p>Títulos, listas e regiões bem definidas ajudam leitores de tela e usuários com atenção reduzida.</p>
+            </article>
+        </section>
+
+        <section class="container info-grid" aria-labelledby="info-title">
+            <h2 id="info-title">Dicas práticas</h2>
+            <div class="info-item">
+                <h3>Links com significado</h3>
+                <p>Evite textos como "clique aqui". Prefira descrições como "Saiba mais sobre senhas seguras".</p>
+            </div>
+            <div class="info-item">
+                <h3>Navegação por teclado</h3>
+                <p>Qualquer interação deve ser acessível usando <kbd>Tab</kbd> e <kbd>Enter</kbd>.</p>
+            </div>
+            <div class="info-item">
+                <h3>Feedback imediato</h3>
+                <p>Mensagens claras e visíveis confirmam ações do usuário.</p>
+            </div>
+        </section>
+
+        <section class="container faq" aria-labelledby="faq-title">
+            <h2 id="faq-title">O que é UX inclusivo?</h2>
+            <ul>
+                <li><strong>Design centrado no usuário:</strong> entender necessidades, hábitos e limitações.</li>
+                <li><strong>Legibilidade:</strong> texto maior, espaçamento entre linhas e contraste adequado.</li>
+                <li><strong>Acessibilidade técnica:</strong> usar HTML semântico, labels, landmarks e atributos ARIA quando necessário.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Projeto de desenvolvimento de interfaces inclusivas com foco em senioridade e acessibilidade digital.</p>
+        </div>
+    </footer>
+
+    <div id="liveRegion" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+    <script src="script.js"></script>
 </body>
 </html>
